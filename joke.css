@@ -1,0 +1,263 @@
+:root{
+    --bg-color: #FBE5E5;
+    --primary-color: #FFBAB2;
+    --sec-color: #E4AAAA;
+    --shade: rgba(0, 0, 0, .11);
+    --white: #FCFCFE
+}
+
+.hidden {
+    display: none;
+  }
+
+body{
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    margin:0
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22rem;
+    height: 37rem;
+    background-color: #FCFCFE;
+    box-shadow: 0px 4px 96px #E6C8D7;
+    border-radius: 20px;
+}
+
+/* =========
+layout-chatlist
+============*/
+
+.rooms{
+    display: block;
+}
+
+.chatroom{
+    height:100%
+}
+
+/* header */
+.header{
+    height: 22%;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    position: relative;
+}
+
+#title{
+    position: absolute;
+    top: 25%;
+    left: 13%;
+}
+
+#sub-title{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    color: #FCFCFE;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* chatlists */
+.chatlists{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65%;
+}
+
+.chatlist{
+    width: 80%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    border-bottom: .05rem solid var(--shade);
+    font-size: .1rem;
+    padding: 10em 0;
+}
+
+.chatlist:hover,
+.chatlist:focus{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+img{
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.chatlist-info{
+    width: 100%;
+    padding-left: 10em;
+}
+
+.chatlist-info-title{
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.chatlist-info-member{
+    font-size: .1rem ;
+    color: rgba(0, 0, 0, .5);
+}
+
+.messenge-num{
+    font-size: .1rem;
+    padding: 2.2em;
+    text-align: center;
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    border-radius: 20px;
+}
+
+/* nav-bar */
+
+.nav-bar{
+    height: 13%;
+    display: flex;
+    align-items: center;
+    /* padding: 1.8em 1em; */
+    justify-content: space-around;
+}
+
+.nav-icon{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.nav-icon:hover,
+.nav-icon:focus{
+    transform: scale(1.3);
+}
+
+/* =========
+layout-singleroom
+============*/
+ 
+.single-room{
+    display: none;
+} 
+
+.instruction{
+    display: block;
+    color: var(--sec-color);
+    position: relative;
+    top: 40%;
+    left: 25%;
+}
+
+
+/* return */
+.return{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.return-arrow,
+.return-to{
+    position: relative;
+    margin:0;
+    padding: .5em;
+    top: 20%;
+    left: 10%;
+}
+
+/* conversation */
+
+.conversation{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 3em 1em 3em;
+}
+
+.log{
+    margin: .5em 0 ;
+    padding: .4em .7em;
+}
+
+.user{
+    max-width: 70%;
+    align-self: flex-end;
+    text-align: right;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+
+.com{
+    max-width: 70%;
+    align-self: flex-start;
+    text-align: left;
+    background-color: var(--bg-color);
+    border-radius: 7px;
+}
+
+#tell-joke,
+#setup,
+#i-dont-know,
+#punchline,
+#lol,
+#new-joke{
+    display: none;
+}
+
+/* buttons */
+
+#punchline-btn,
+#lol-btn,
+#new-joke-btn{
+    display:none;
+}
+
+.buttons{
+    height: 10% ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 40%;
+    height: 2rem;
+    position: relative;
+    left: 32%;
+    align-self: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover,
+button:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 24px 0px #F3E2E7;
+}
+
+#lol-btn{
+    position: relative;
+    top: -70%;
+    left: -8%;
+}

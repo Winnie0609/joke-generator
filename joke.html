@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/FzrbS0w1/682afaebd0b44959ba84d4b6b34b490c-1.png" type="image/png">
+    <link rel="stylesheet" href="joke.css">
+    <script src="https://kit.fontawesome.com/5755d4a973.js" crossorigin="anonymous"></script>
+
+    <title>Joke Generator</title>
+
+</head>
+<body>
+
+    <section class="container rooms">
+        <div class="chatroom">
+            <header class="header">
+                <p id="title">Welcome Back.</p>
+                <p id="sub-title">Join a room now!</p>
+            </header>
+            
+            <div class="chatlists">
+                <div class="chatlist" id="room-one">
+                    <img src="https://i.postimg.cc/rpLdDm9d/dominik-vanyi-5-Fxuo7x-eyg-unsplash.jpg" alt="joke">
+                    <div class="chatlist-info">
+                        <p class="chatlist-info-title">You should get a joke.</p>
+                        <p class="chatlist-info-member">Jeffrey,  Tiffany and 50 more</p>
+                    </div>
+                    <div class="messenge-num">23</div>
+                </div>
+    
+                <div class="chatlist">
+                    <img src="https://i.postimg.cc/2yTdwW2X/xps-oc-Au-Plf-ZXEc-unsplash.jpg" alt="developer">
+                    <div class="chatlist-info">
+                        <p class="chatlist-info-title">Be a developer.</p>
+                        <p class="chatlist-info-member">Rudy, Leon and 100more</p>
+                    </div>
+                    <div class="messenge-num">99+</div>
+                </div>
+    
+                <div class="chatlist">
+                    <img src="https://i.postimg.cc/LXLNzhcr/daniel-cheung-c-PF2nl-Wc-MY4-unsplash.jpg" alt="tell-me-about-it">
+                    <div class="chatlist-info">
+                        <p class="chatlist-info-title">Tell me about it.</p>
+                        <p class="chatlist-info-member">Hugo, Laura and 20more</p>
+                    </div>
+                    <div class="messenge-num">12</div>
+                </div>
+    
+                <div class="chatlist">
+                    <img src="https://i.postimg.cc/QCDSShsV/kevin-grieve-OJo7v-VUii-DA-unsplash.jpg" alt="life">
+                    <div class="chatlist-info">
+                        <p class="chatlist-info-title">Life is F*cking hard!</p>
+                        <p class="chatlist-info-member">Penny, Jane and 340more</p>
+                    </div>
+                    <div class="messenge-num">99+</div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <i class="fas fa-home nav-icon"></i>
+                <i class="fas fa-plus-circle nav-icon"></i>
+                <i class="fas fa-user-alt nav-icon"></i>
+            </nav>
+        </>
+    </section>
+
+<!-- chatroom section -->
+
+    <section class = "container single-room">
+        <div class="return">
+            <i class="fas fa-chevron-left return-arrow"></i>
+            <p class="return-to">All rooms</p>
+        </div>
+        
+        <div class="conversation">
+            <p class="instruction">Click to get a Joke!</p>
+            <p class="user log" id="tell-joke">Tell me a joke</p>
+            <p class="com log" id="setup">How many programmers does it take to change a lightbulb?</p>
+            <p class="user log" id="i-dont-know">Tell me the answer.</p>
+            <p class="com log" id="punchline">None that's a hardware problem.</p>
+            <p class="user log" id="lol">LOL😂</p>
+            <p class="user log" id="new-joke">Tell me a new joke.</p>
+        
+        </div>
+        
+        <div class="buttons">
+            <button id="joke-btn">Tell me a joke.</button>
+            <button id="punchline-btn">Tell me the Answer</button>
+            <button id="lol-btn">LOL😂</button>
+            <button id="new-joke-btn">Tell me a new joke.</button>
+        </div>
+
+        <nav class="nav-bar">
+            <i class="fas fa-home nav-icon"></i>
+            <i class="fas fa-plus-circle nav-icon"></i>
+            <i class="fas fa-user-alt nav-icon"></i>
+        </nav>
+
+    </section>
+
+
+    <script src="joke.js"></script>
+</body>
+</html>
