@@ -2,7 +2,9 @@
 An app that gives you some joy.
 
 ## Demo
-Blog :   
+[Blog]()
+[Live Demo](https://winnie0609.github.io/joke-generator/joke.html)
+
 ![](https://i.imgur.com/NMfSYoI.gif)
 
 ## Feature
